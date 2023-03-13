@@ -1,0 +1,17 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: SpringBootOAuth
+security:
+  oauth2:
+    client:
+      clientId: 567608478582028
+      clientSecret: a41729782d8c5f7d37ace6bd25cabe93
+      accessTokenUri: https://graph.facebook.com/oauth/access_token
+      userAuthorizationUri: https://www.facebook.com/dialog/oauth
+      tokenName: oauth_token
+      authenticationScheme: query
+      clientAuthenticationScheme: form
+  resource:
+    userInfoUri: https://graph.facebook.com/me
